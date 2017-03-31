@@ -13,7 +13,7 @@
     "widget"
   ],
   "type": "yii2-extension",
-  "homepage": "https://matrozov.github.io/yii2-selectopus/",
+  "homepage": "https://github.com/matrozov/yii2-selectopus",
   "license": "MIT",
   "authors": [
     {
@@ -25,6 +25,6 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "^2.0",
-    "bower-asset/selectopus": "dev-master"
+    "bower-asset/selectopus": "*"
   }
 }
