@@ -1,0 +1,19 @@
+{
+  "name": "matrozov/yii2-selectopus",
+  "description": "Selectopus is a jQuery based replacement for select boxes.",
+  "type": "select, multiple, tag, yii2, jquery, plugin, selectopus",
+  "homepage": "https://matrozov.github.io/yii2-selectopus/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matrozov Oleg",
+      "email": "oleg.matrozov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "^2.0",
+    "bower-asset/selectopus": "dev-master"
+  }
+}
