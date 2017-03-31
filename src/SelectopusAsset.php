@@ -16,7 +16,7 @@ class SelectopusAsset extends AssetBundle
         'css/selectopus.min.css',
     ];
     public $js = [
-        'js/selectopus.min.js',
+        'js/selectopus.full.min.js',
     ];
     public $depends = [
         'yii\web\JqueryAsset',
