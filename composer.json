@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "matrozov\\selectopus\\": "src"
+      "matrozov\\yii2-selectopus\\": "src"
     }
   }
 }

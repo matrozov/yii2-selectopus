@@ -20,16 +20,17 @@ class Selectopus extends \yii\widgets\InputWidget
     {
         SelectopusAsset::register($this->view);
 
-        $id = $this->options['id'];
+        $this->options['multiple'] = $this->clientOptions['multiple'] = isset($this->clientOptions['multiple']) ? $this->clientOptions['multiple'] : $this->options['multiple'];
 
         $options = Json::encode($this->clientOptions);
 
-        $this->view->registerJs('jQuery("#' . $id . '").selectopus(' . $options . ');', View::POS_LOAD);
+        $this->view->registerJs('jQuery("#' . $this->options['id'] . '").selectopus(' . $options . ');', View::POS_LOAD);
 
         if ($this->hasModel()) {
-            echo Html::activeDropDownList($this->model, $this->attribute, $this->items, $this->options);
-        } else {
-            echo Html::dropDownList($this->name, $this->value, $this->items, $this->options);
+            return Html::activeDropDownList($this->model, $this->attribute, $this->items, $this->options);
+        }
+        else {
+            return Html::dropDownList($this->name, $this->value, $this->items, $this->options);
         }
     }
 }
