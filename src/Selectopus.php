@@ -24,7 +24,7 @@ class Selectopus extends \yii\widgets\InputWidget
 
         $options = Json::encode($this->clientOptions);
 
-        $this->view->registerJs('jQuery("#' . $this->options['id'] . '").selectopus(' . $options . ');', View::POS_LOAD);
+        $this->view->registerJs('jQuery("#' . $this->options['id'] . '").selectopus(' . $options . ');', View::POS_READY);
 
         if ($this->hasModel()) {
             return Html::activeDropDownList($this->model, $this->attribute, $this->items, $this->options);
